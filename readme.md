@@ -7,16 +7,18 @@
 
 ## ROLES  && Slugs
 
-Super Admin  |   super-admin
-      Admin  |   admin
-      User   |   user
+-  Super Admin  |   super-admin
+-        Admin  |   admin
+-        User   |   user
 
 
 
 
 
 ## Getting users with roles
+
 <code>
+[
 <?php
 
 
@@ -33,6 +35,7 @@ if(auth()->user()->hasRole('admin')){
 }
    
 ?>
+]
 </code>
 
 #instructions
