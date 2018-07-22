@@ -5,9 +5,9 @@
 
 
 
-## ROLES  && Slugs
+## Roles  && Slugs
 
-- 
+
 -  Super Admin  |   super-admin
 -        Admin  |   admin
 -        User   |   user
@@ -18,11 +18,7 @@
 
 ## Getting users with roles
 
-<code>
 
-<?php
-
-- 
 
 -  if(auth()->user()->hasRole('super-admin')){
     echo "super admin";
@@ -36,9 +32,9 @@
     echo "admin";
     }
    
-?>
 
-</code>
+
+
 
 #instructions
 
@@ -55,3 +51,8 @@
 1. helpers files with reusable methods
 2. roles and users + userdetails setup
 3. errors file in partials/errors
+
+
+#check us out
+
+- **[Overall Heuristic](https://overallheuristic.com/)**
