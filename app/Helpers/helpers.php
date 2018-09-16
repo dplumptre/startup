@@ -101,7 +101,17 @@ function createRandomPassword() {
 
 
 
+    function concatenate($string){
 
+        $string = strtolower($string);
+        //Make alphanumeric (removes all other characters)
+        $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+        //Clean up multiple dashes or whitespaces
+        $string = preg_replace("/[\s-]+/", " ", $string);
+        //Convert whitespaces and underscore to period
+        $string = preg_replace("/[\s_]/", ".", $string);
+        return $string;
+    }
 
 
 
